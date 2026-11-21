@@ -1,0 +1,8 @@
+File: export_extra.zip
+Ảnh: 4 · đã có frame_meta: 4 · số đối tượng: child_seat=2, face=4, infant_seat=2, object=2, person=2
+Kết quả: 0 lỗi, 0 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+--- Giải thích (người gán: Chu Thiên Phú, G09 · phần mở rộng S09–S10, task Day12-G09-extra) ---
+- 0 lỗi, 0 cảnh báo. Trước lần chạy này đã sửa: thiếu tag frame_meta ở cả 4 ảnh; sau đó tag frame_meta và box object (cup, S09 rear_middle) bị dán trùng → đã xoá bản trùng.
+- Tự kiểm thêm ngoài script: modality đúng tên file; light=unknown; ghế gọi theo xe (trái ảnh = rear_right); RGB và IR mỗi cảnh cùng số box và thuộc tính.
+- S09 rear_left: có box face trong infant_seat, không có person, cùng cách xử lý như task chính (S01, S05, S06).

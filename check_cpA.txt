@@ -1,0 +1,9 @@
+File: part_A.zip · chỉ kiểm ảnh: S01, S02
+Ảnh: 4 · đã có frame_meta: 4 · số đối tượng: child_seat=4, face=6, infant_seat=2, object=2, person=2
+  [ERROR] S02_ir.png: child_seat: occupied='yes' không hợp lệ (cho phép: unknown, no)
+  [ERROR] S02_rgb.png: child_seat: occupied='yes' không hợp lệ (cho phép: unknown, no)
+Kết quả: 2 lỗi, 0 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+--- Giải thích (người gán: Chu Thiên Phú, G09) ---
+- [ERROR] S02_rgb, S02_ir: child_seat occupied='yes' tại ghế rear_left. Giữ nguyên theo chỉ thị của coach (21/11/2026): ghế trẻ em có trẻ em ngồi, Guideline v1.0 không có giá trị cho ca này nên coach cho thêm 'yes' vào label child_seat trên project. Script kiểm theo v1.0 nên vẫn báo lỗi; không sửa XML bằng tay (RULES §4).
+- Lần chạy đầu của checkpoint có thêm: shape bị dán trùng trên S01_rgb/S02_rgb, 2 tag frame_meta trên S02_rgb, light=day trên ảnh SVIRO. Đã xoá bản trùng và đổi light=unknown trước lần chạy này.

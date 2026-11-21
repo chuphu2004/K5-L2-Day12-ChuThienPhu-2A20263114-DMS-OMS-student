@@ -1,0 +1,8 @@
+File: export_final.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=8, face=18, face13=6, hand=12, infant_seat=10, object=12, person=10, phone=1
+Kết quả: 0 lỗi, 0 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+--- Giải thích (người gán: Chu Thiên Phú, G09) ---
+- Kiểm bằng scripts/cabin_schema.py bản mentor cập nhật (21/11/2026): child_seat.occupied cho phép thêm 'yes'. S02 rear_left dùng occupied='yes' theo chỉ thị của coach (xem check_cpA.txt); với schema mới không còn báo lỗi.
+- Các lỗi đã sửa so với checkpoint: shape dán trùng và tag frame_meta thừa (S01_rgb, S02_rgb, S03_ir); light=day trên SVIRO; seat của infant_seat ở S04 gọi theo ảnh (rear_left → rear_right); eye_* = open trong khi cả 4 điểm mắt bật occluded (D01, D03, D05); D06 chưa lưu; D06 eye_left unknown → open (thấy khe mắt khi liếc xuống, §4.5); D02 seatbelt not_worn → unknown (tài xế đang thắt dở, §4.7).
+- Tự kiểm thêm ngoài script: modality đúng tên file ở cả 22 ảnh; mọi left_eye_* trên D## có y lớn hơn right_eye_* (ảnh xoay 90°); mặt D## đều rộng > 60 px theo cả hai trục.
