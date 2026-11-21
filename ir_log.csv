@@ -1,0 +1,5 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+D03,real_IR,"mắt mở nhưng mở hé, vẫn đặt mở cho đúng guideline",face (box),khó cho model học
+D02,real_IR,tài xế đang lấy tay thắt dây an toàn,seatbelt,"ghi unknown (đang thắt dở, GUIDE §4.7)"
+S01_ir,IR_sim,không label trẻ con là person,person (box),bỏ qua trẻ con
+S06_ir,IR_sim,cốc quá gần vị trí rear_middle và bị trùng 1 số pixel với box infant_seat,seatbelt,có thể làm model nhầm đặc điểm 
