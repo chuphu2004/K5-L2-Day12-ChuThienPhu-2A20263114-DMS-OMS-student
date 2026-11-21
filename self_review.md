@@ -17,10 +17,10 @@ Loại lỗi: `seat_flip`, `wrong_class`, `guess`, `box`, `missing`, `extra`, `l
 
 Lỗi: dán shape trùng (Ctrl+V hai lần), gặp 3 lần: S01_rgb/S02_rgb (cả tag frame_meta), S03_ir, và cả 4 ảnh task bonus S09–S10.
 
-Vì sao mình mắc: … (bạn tự viết; gợi ý từ dữ liệu: box trùng có toạ độ khít nhau nên nhìn canvas không thấy, mình chỉ kiểm bằng mắt trên ảnh)
+Vì sao mình mắc: trước khi label không cập nhật các nhãn làm các box cũ không được hiện, nhưng vẫn tồn tại
 
-Lần sau tránh bằng cách: … (bạn tự viết)
+Lần sau tránh bằng cách: check kĩ trước danh sách các nhãn và cập nhật
 
 ## 3. Ghi chú về disagreement_log
 
-Một dòng bạn của mình đúng và mình sai. Mình học được gì từ dòng đó: review chéo với Lưu Nhật Nam (45 dòng bất đồng ở 22 ảnh chính) không có dòng nào `verdict = peer`; Nam xác nhận bản của mình đúng. …
+Một dòng bạn của mình đúng và mình sai. Mình học được gì từ dòng đó: review chéo với Lưu Nhật Nam (45 dòng bất đồng ở 22 ảnh chính) không có dòng nào `verdict = peer`; Nam xác nhận bản của mình đúng. 

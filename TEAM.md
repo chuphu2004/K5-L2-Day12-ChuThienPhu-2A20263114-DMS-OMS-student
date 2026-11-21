@@ -14,4 +14,4 @@ Ca hai bạn vẫn không thống nhất và đã hỏi coach (ghi tên ảnh + 
 
 ### ChuThienPhu-2A20263114
 - Phần mình làm: tự gán đủ 22 ảnh, tự kiểm bằng cabin_check ở Checkpoint A, B và lần cuối. Review chéo với Lưu Nhật Nam: chạy cabin_check diff, gửi báo cáo QC và disagreement_log cho Nam.
-- Điều mình học được hôm nay: …
+- Điều mình học được hôm nay: học được cách làm việc tốt hơn với bài toán này.
